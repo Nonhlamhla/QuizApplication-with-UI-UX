@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/riddle4"
+    tools:context="com.example.admin.quizapplication.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp" >
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/timer"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="No sooner spoken than broken. What is it?"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/questions"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silence"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/choice1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonactivity_style"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a secret"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/choice2"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonactivity_style"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a vase"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/choice3"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonactivity_style"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quit"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btnQuitL4"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonactivity_style" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
